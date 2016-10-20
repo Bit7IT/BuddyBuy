@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="helloworld.buddybuy.UserSignIn">
+
+    <TextView
+        android:text="Please enter your name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#63c420"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:id="@+id/txtviewEnterName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="22dp"
+        android:background="#d3d3d3"
+        android:gravity="center"
+        android:hint="password"
+        android:textColor="#63c420"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/EdittxtPw"
+        android:layout_below="@+id/txtviewEnterPw"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Next -->"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNext"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="23dp"
+        android:background="#d3d3d3"
+        android:gravity="center"
+        android:hint="name"
+        android:textColor="#63c420"
+        android:id="@+id/EdittxtName"
+        android:layout_below="@+id/txtviewEnterName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Please enter your password "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#63c420"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:id="@+id/txtviewEnterPw"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/EdittxtName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
