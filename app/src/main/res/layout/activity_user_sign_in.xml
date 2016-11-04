@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_user_sign_up"
+    android:id="@+id/activity_user_sign_in"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/background_light"
@@ -9,6 +9,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
     tools:context="helloworld.buddybuy.UserSignIn">
 
     <TextView
@@ -19,7 +21,7 @@
         android:textColor="#63c420"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:id="@+id/txtviewEnterName"
+        android:id="@+id/TextView_EnterName"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -34,8 +36,8 @@
         android:textColor="#63c420"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/EdittxtPw"
-        android:layout_below="@+id/txtviewEnterPw"
+        android:id="@+id/EditText_EnterPw"
+        android:layout_below="@+id/TextView_EnterPw"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -56,10 +58,11 @@
         android:gravity="center"
         android:hint="name"
         android:textColor="#63c420"
-        android:id="@+id/EdittxtName"
-        android:layout_below="@+id/txtviewEnterName"
+        android:id="@+id/EditText_EnterName"
+        android:layout_below="@+id/TextView_EnterName"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:inputType="textPersonName" />
 
     <TextView
         android:text="Please enter your password "
@@ -69,9 +72,9 @@
         android:textColor="#63c420"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:id="@+id/txtviewEnterPw"
+        android:id="@+id/TextView_EnterPw"
         android:layout_marginTop="37dp"
-        android:layout_below="@+id/EdittxtName"
+        android:layout_below="@+id/EditText_EnterName"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 

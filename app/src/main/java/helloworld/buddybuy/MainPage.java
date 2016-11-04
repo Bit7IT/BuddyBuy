@@ -11,8 +11,8 @@ public class MainPage extends AppCompatActivity {
     public Button btnSignUp;
 
 
-   /* public void runSignUpFunc(){
-        btnSignUp =(Button)findViewById(R.id.btnSignIn);
+    public void runSignUpFunc(){
+        btnSignUp =(Button)findViewById(R.id.btnSignUp);
         //wiring the button
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -21,12 +21,11 @@ public class MainPage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }//for SignUp button*/
+    }//for SignUp button
 
     public void runSignInFunc() {
         btnSignUp = (Button) findViewById(R.id.btnSignIn);
-        //wiring the button
-        btnSignUp.setOnClickListener(new View.OnClickListener() {
+        btnSignUp.setOnClickListener(new View.OnClickListener() { //wiring the button
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainPage.this, UserSignIn.class); // go to the User Sign up Screen
@@ -37,13 +36,11 @@ public class MainPage extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) { //main for main
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_page);
         runSignInFunc();
-        // runSignUpFunc();
-
-
+        runSignUpFunc();
     }
 
 

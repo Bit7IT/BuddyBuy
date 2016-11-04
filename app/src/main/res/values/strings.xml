@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">BuddyBuy</string>
     <string name="title_activity_suer_sign_in">SuerSignIn</string>
+    <string name="title_activity_user_sign_up">UserSignUp</string>
 </resources>

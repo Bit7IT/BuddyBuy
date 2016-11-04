@@ -15,10 +15,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UserSignUp" />
+        <activity
+            android:name=".UserSignUp"
+            android:label="@string/title_activity_user_sign_up" />
         <activity
             android:name=".UserSignIn"
-            android:label="@string/title_activity_suer_sign_in"></activity>
+            android:label="@string/title_activity_suer_sign_in" />
+        <activity android:name=".SignUp" />
     </application>
 
 </manifest>
